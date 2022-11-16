@@ -8,8 +8,9 @@ export default class UsersController {
         return await User.create(dados)
     }
     async login ({request, auth}){
-        const (email, password = request.body()) 
+        const email = request.input('email')
+        const password = request.input('password') 
         return await auth.use('api').attempt(email,password)  
           
-      }
+    }
 }
