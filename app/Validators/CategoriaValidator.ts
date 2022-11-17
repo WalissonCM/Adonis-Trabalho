@@ -27,7 +27,7 @@ export default class CategoriaValidator {
     nome:schema.string({}, [
       rules.maxLength(50),
       rules.alpha(),
-      rules.unique({table: 'categoria', column: 'nome'})
+      rules.unique({table: 'categorias', column: 'nome'})
     ])
     })
 

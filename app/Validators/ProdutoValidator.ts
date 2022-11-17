@@ -27,7 +27,7 @@ export default class ProdutoValidator {
     nome:schema.string({}, [
       rules.maxLength(50),
       rules.alpha(),
-      rules.unique({table: 'produto', column: 'nome'})
+      rules.unique({table: 'produtos', column: 'nome'})
      ]),
      preco:schema.number([
       rules.maxLength(7)
@@ -36,10 +36,10 @@ export default class ProdutoValidator {
       rules.maxLength(3)
      ]),
      categoriaId:schema.number([
-      rules.exists({table:'produto', column: 'categoria_id'})
+      rules.exists({table:'produtos', column: 'categoria_id'})
      ]),
      fornecedorId:schema.number([
-      rules.exists({table:'produto', column: 'fornecedor_id'})
+      rules.exists({table:'produtos', column: 'fornecedor_id'})
     ])
   })
 

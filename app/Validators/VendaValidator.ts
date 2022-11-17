@@ -27,14 +27,13 @@ export default class VendaValidator {
     valor: schema.number([
       rules.maxLength(7)
     ]),
-    data:schema.date({}, [
-      rules.regex(/(^\d{4}\-\d{1,2}\-\d{1,2}$)/)
-    ]),
+    data:schema.date(),
+    
     clienteId:schema.number([
-      rules.exists({table:'venda', column: 'cliente_id'})
+      rules.exists({table:'vendas', column: 'cliente_id'})
     ]),
     vendedorId:schema.number([
-      rules.exists({table:'venda', column: 'vendedor_id'})
+      rules.exists({table:'vendas', column: 'vendedor_id'})
     ])
   })
 

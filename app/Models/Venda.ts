@@ -32,6 +32,6 @@ export default class Venda extends BaseModel {
   @belongsTo(()=>Vendedor)
   public vendedor: BelongsTo<typeof Vendedor>
 
-  @manyToMany(()=>Produto, {pivotTable: 'venda_produto'})
+  @manyToMany(()=>Produto, {pivotTable: 'venda_produtos'})
   public produto: ManyToMany<typeof Produto>
 }

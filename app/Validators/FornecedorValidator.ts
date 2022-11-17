@@ -27,7 +27,7 @@ export default class FornecedorValidator {
     nome:schema.string({}, [
       rules.maxLength(50),
       rules.alpha(),
-      rules.unique({table: 'fornecedor', column: 'nome'})
+      rules.unique({table: 'fornecedors', column: 'nome'})
     ]),
     cnpj:schema.string({}, [
       rules.minLength(18),

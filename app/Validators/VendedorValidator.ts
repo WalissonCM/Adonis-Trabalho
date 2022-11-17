@@ -27,7 +27,7 @@ export default class VendedorValidator {
     nome:schema.string({}, [
       rules.maxLength(50),
       rules.alpha(),
-      rules.unique({table: 'vendedor', column: 'nome'})
+      rules.unique({table: 'vendedors', column: 'nome'})
     ]),
     email:schema.string({}, [
       rules.email(),

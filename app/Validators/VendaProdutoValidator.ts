@@ -25,10 +25,10 @@ export default class VendaProdutoValidator {
    */
   public schema = schema.create({
     vendaId:schema.number([
-      rules.exists({table:'venda_produto', column: 'venda_id'})
+      rules.exists({table:'venda_produtos', column: 'venda_id'})
     ]),
     produtoId:schema.number([
-      rules.exists({table:'venda_produto', column: 'produto_id'})
+      rules.exists({table:'venda_produtos', column: 'produto_id'})
     ])
   })
 

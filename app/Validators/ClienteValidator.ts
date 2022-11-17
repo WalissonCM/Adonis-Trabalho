@@ -27,7 +27,7 @@ export default class ClienteValidator {
     nome:schema.string({}, [
       rules.maxLength(50),
       rules.alpha(),
-      rules.unique({table: 'cliente', column: 'nome'})
+      rules.unique({table: 'clientes', column: 'nome'})
     ]),
     email:schema.string({}, [
       rules.email(),
