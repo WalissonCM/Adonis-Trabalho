@@ -20,7 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.post('/users', 'UsersController.store').middleware('auth')
+Route.post('/users', 'UsersController.store')/*.middleware('auth')*/
 Route.post('/login', 'UsersController.login')
 
 Route.group(() => {
