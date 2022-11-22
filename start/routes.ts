@@ -25,17 +25,11 @@ Route.post('/login', 'UsersController.login')
 
 Route.group(() => {
 Route.resource('/categorias', 'CategoriasController').apiOnly()
-
 Route.resource('/clientes', 'clientesController').apiOnly()
-
 Route.resource('/fornecedors', 'FornecedorsController').apiOnly()
-
 Route.resource('/produtos', 'ProdutosController').apiOnly()
-
 Route.resource('/venda_produtos', 'VendaProdutosController').apiOnly()
-
 Route.resource('/vendas', 'VendasController').apiOnly()
-
 Route.resource('/vendedors', 'VendedorsController').apiOnly()
 
 }).middleware('auth')

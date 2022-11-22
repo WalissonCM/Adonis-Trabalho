@@ -34,22 +34,22 @@ export default class VendedorValidator {
       rules.maxLength(100)
     ]),
     cpf:schema.string({}, [
-      rules.minLength(15),
-      rules.maxLength(15),
-      rules.regex(/(^\d{3}\.?\d{3}\.?\d{3}\-?\d{2}$)/)
+      rules.minLength(14),
+      rules.maxLength(14),
+      rules.regex(/^\d{3}\.?\d{3}\.?\d{3}\-?\d{2}$/)
     ]),
     salario:schema.string([
       rules.maxLength(6)
      ]),
      telefone:schema.string.optional({}, [
       rules.maxLength(15),
-      rules.minLength(15),
-      rules.regex(/^((61)?\d{5}\-?\d{4}$)/)
+      rules.minLength(11),
+      rules.regex(/^\([1-9]{2}\) ?\d{5}\-?\d{4}$/)
     ]),
     cep:schema.string.optional([
       rules.maxLength(9),
       rules.minLength(9),
-      rules.regex(/(^\d{5}\-?\d{3}$)/)
+      rules.regex(/^\d{5}\-?\d{3}$/)
      ]),
      endereco:schema.string.optional({}, [
       rules.maxLength(100),

@@ -32,7 +32,7 @@ export default class FornecedorValidator {
     cnpj:schema.string({}, [
       rules.minLength(18),
       rules.maxLength(18),
-      rules.regex(/(^\d{2}\.\d{3}\.\d{3}\/?\d{4}\-\d{2}$)/)
+      rules.regex(/^\d{2}\.?\d{3}\.?\d{3}\/?\d{4}\-?\d{2}$/)
      ]),
   })
 
