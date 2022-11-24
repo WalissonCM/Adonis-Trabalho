@@ -12,12 +12,12 @@ export default class extends BaseSeeder {
       {nome:"RTX 4090", preco:16000, quantidade:50, categoriaId:5, fornecedorId:2},
       {nome:"Asus Rog x670", preco:5000, quantidade:50, categoriaId:6, fornecedorId:7},
       {nome:"SSD 240Gb", preco:200, quantidade:50, categoriaId:8, fornecedorId:9},
-      {nome:"Corsair Carbide", preco:400, quantidade:50, categoriaId:12, fornecedorId:5},
+      {nome:"Corsair Carbide", preco:500, quantidade:50, categoriaId:12, fornecedorId:5},
       {nome:"Cloud Orbit S", preco:2700, quantidade:50, categoriaId:13, fornecedorId:8},
       {nome:"Teclado sem fio", preco:2200, quantidade:50, categoriaId:9, fornecedorId:10},
       {nome:"Mouse sem fio", preco:2400, quantidade:50, categoriaId:10, fornecedorId:10},
       {nome:"Monitor Odyssey", preco:21500, quantidade:50, categoriaId:11, fornecedorId:3},
-      {nome:"Mousepad gamer", preco:130, quantidade:50, categoriaId:14, fornecedorId:8}
+      {nome:"Mousepad gamer", preco:500, quantidade:50, categoriaId:14, fornecedorId:8}
     ])
   }
 }

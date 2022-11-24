@@ -4,8 +4,10 @@ import VendaProduto from 'App/Models/VendaProduto'
 export default class extends BaseSeeder {
   public async run () {
     await VendaProduto.createMany([
-      {vendaId:1, produtoId:1}
-     
+      {vendaId:1, produtoId:1},
+      
+    
+    
     ])
   }
 }
